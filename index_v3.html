@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人履歷作品集</title>
+    <link rel="stylesheet" href="style_v3.css?v=3.1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="top-buttons">
+        <a id="resume-download" class="resume-btn" href="files/Chinese CV.pdf" download data-i18n="resume_btn">下載履歷</a>
+        <button id="lang-switch" class="lang-btn" type="button">EN / 中</button>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger-btn" id="hamburger-btn" aria-label="選單" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav class="side-nav" id="side-nav" aria-label="頁面導覽">
+        <a href="#hero" data-i18n="nav_home">首頁</a>
+        <a href="#education" data-i18n="nav_edu">學歷</a>
+        <a href="#experience" data-i18n="nav_exp">專案</a>
+        <a href="#internship" data-i18n="nav_intern">實習</a>
+        <a href="#skills" data-i18n="nav_skills">技能</a>
+        <a href="#certificates" data-i18n="nav_cert">證照</a>
+        <a href="#contact" data-i18n="nav_contact">聯絡</a>
+    </nav>
+
+    <main id="main-container">
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="content hero-container">
+                <div class="hero-text-col">
+                    <p class="greeting">HELLO, I AM</p>
+                    <h1 data-i18n="name" class="brand-name"></h1>
+                    <div class="brand-line"></div>
+                    <p data-i18n="intro" class="brand-slogan"></p>
+
+                    <!-- New Hero Elements -->
+                    <p class="hero-subtitle" data-i18n="hero_subtitle"></p>
+                    <div class="hero-tags" data-i18n="hero_tags"></div>
+
+                    <button class="about-btn interactive-item" data-title-key="about_btn" data-desc-key="about_desc"
+                        data-i18n="about_btn" type="button"></button>
+                </div>
+
+                <div class="hero-visual-col">
+                    <div class="image-wrapper">
+                        <img src="files/images/pic1.jpg" alt="profile" class="profile-img" />
+                        <div class="geometric-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="content tilt-card">
+                <h2 data-i18n="edu_title"></h2>
+
+                <div class="edu-item">
+                    <div class="edu-text">
+                        <h3 data-i18n="edu_1_school">國立高雄科技大學</h3>
+                        <p data-i18n="edu_1_major">運籌管理系日間部 學士</p>
+                        <p data-i18n="edu_1_time">2020 - 2023</p>
+                    </div>
+                    <img src="files/images/nkust_logo.jpeg" alt="NKUST Logo" class="edu-logo" />
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-text">
+                        <h3 data-i18n="edu_2_school">國立高雄科技大學</h3>
+                        <p data-i18n="edu_2_major">金融系日間部 碩士</p>
+                        <p data-i18n="edu_2_time">2023 - 2025</p>
+                    </div>
+                    <img src="files/images/nkust_logo.jpeg" alt="NKUST Logo" class="edu-logo" />
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-text">
+                        <h3 data-i18n="edu_3_school">法國雷恩商學院</h3>
+                        <p data-i18n="edu_3_major">數位行銷管理 碩士</p>
+                        <p data-i18n="edu_3_time">2025 - 2026</p>
+                    </div>
+                    <img src="files/images/rsb_logo.png" alt="RSB Logo" class="edu-logo" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="content tilt-card">
+                <h2 data-i18n="exp_title"></h2>
+
+                <div class="job-item interactive-item" data-title-key="exp_1_role" data-desc-key="exp_1_detail">
+                    <h3 data-i18n="exp_1_role"></h3>
+                    <p class="project-summary" data-i18n="exp_1_summary"></p>
+                    <div class="project-tags-list" data-i18n="exp_1_tags_list"></div>
+                    <p data-i18n="exp_1_time">Jan 2023 – Dec 2023</p>
+                </div>
+
+                <div class="job-item interactive-item" data-title-key="exp_2_role" data-desc-key="exp_2_detail"
+                    data-images-key="exp_2_imgs" data-images='[
+                      {"src": "files/images/機器學習模型預測結果.png", "caption": "機器學習模型預測結果績效比較"},
+                      {"src": "files/images/W51 shap summary plot.png", "caption": "SHAP值解釋變數影響力 心臟內科"},
+                      {"src": "files/images/W51 因子重要性.png", "caption": "因子重要性分析 心臟內科"}
+                    ]'>
+                    <h3 data-i18n="exp_2_role"></h3>
+                    <p class="project-summary" data-i18n="exp_2_summary"></p>
+                    <div class="project-tags-list" data-i18n="exp_2_tags_list"></div>
+                    <p data-i18n="exp_2_time">Sep 2024 – Jul 2025</p>
+                </div>
+
+                <div class="job-item interactive-item" data-title-key="exp_3_role" data-desc-key="exp_3_detail">
+                    <h3 data-i18n="exp_3_role"></h3>
+                    <p class="project-summary" data-i18n="exp_3_summary"></p>
+                    <div class="project-tags-list" data-i18n="exp_3_tags_list"></div>
+                    <p data-i18n="exp_3_time">Sep 2025 – Oct 2025</p>
+                </div>
+
+                <div class="job-item interactive-item" data-title-key="exp_4_role" data-desc-key="exp_4_detail">
+                    <h3 data-i18n="exp_4_role"></h3>
+                    <p class="project-summary" data-i18n="exp_4_summary"></p>
+                    <div class="project-tags-list" data-i18n="exp_4_tags_list"></div>
+                    <p data-i18n="exp_4_time">Sep 2025 – Dec 2025</p>
+                </div>
+
+                <div class="job-item interactive-item" data-title-key="exp_5_role" data-desc-key="exp_5_detail">
+                    <h3 data-i18n="exp_5_role"></h3>
+                    <p class="project-summary" data-i18n="exp_5_summary"></p>
+                    <div class="project-tags-list" data-i18n="exp_5_tags_list"></div>
+                    <p data-i18n="exp_5_time">Dec 2025 – Present</p>
+                </div>
+
+                <div class="job-item interactive-item" data-title-key="exp_6_role" data-desc-key="exp_6_detail">
+                    <h3 data-i18n="exp_6_role"></h3>
+                    <p class="project-summary" data-i18n="exp_6_summary"></p>
+                    <div class="project-tags-list" data-i18n="exp_6_tags_list"></div>
+                    <p data-i18n="exp_6_time">Jan 2026 – Present</p>
+                </div>
+
+                <div class="job-item interactive-item" data-title-key="exp_7_role" data-desc-key="exp_7_detail"
+                    data-images-key="exp_7_imgs" data-images='[]'>
+                    <h3 data-i18n="exp_7_role"></h3>
+                    <p class="project-summary" data-i18n="exp_7_summary"></p>
+                    <div class="project-tags-list" data-i18n="exp_7_tags_list"></div>
+                    <p data-i18n="exp_7_time">Feb 2026 – Present</p>
+                </div>
+
+                <p class="hint-text" data-i18n="hint_text"></p>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section id="internship">
+            <div class="content tilt-card">
+                <h2 data-i18n="intern_title">實習經驗</h2>
+
+                <div class="job-item interactive-item job-item-with-logo" data-title-key="intern1role"
+                    data-desc-key="intern1detail" data-images-key="intern_1_imgs" data-images='[
+                      {"src": "files/images/golden1.JPG", "caption": "與老闆的合照~"},
+                      {"src": "files/images/golden2.JPG", "caption": "與員工的合照~"},
+                      {"src": "files/images/golden3.JPG", "caption": "在品管站體驗的我~"}
+                    ]'>
+                    <div class="job-text">
+                        <h3 data-i18n="intern_1_title">Golden Corporation Sdn Bhd 廠務實習生</h3>
+                        <p data-i18n="intern_1_time">2023年7月 - 2023年8月</p>
+                        <p class="intern-desc" data-i18n="intern_1_desc"></p>
+                    </div>
+                    <img src="files/images/golden_corporation_logo.jpg" class="company-logo"
+                        alt="Golden Corporation Logo" />
+                </div>
+
+                <p class="hint-text" data-i18n="hint_text"></p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="content tilt-card">
+                <h2 data-i18n="skills_title"></h2>
+                <p class="section-summary" data-i18n="skills_summary"></p>
+
+                <div class="skills-container-v3">
+                    <div class="skill-category">
+                        <h3 data-i18n="skill_cat_1">Data & AI</h3>
+                        <div class="skill-items" data-i18n="skill_list_1"></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skill_cat_2">Marketing & Business</h3>
+                        <div class="skill-items" data-i18n="skill_list_2"></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="skill_cat_3">Tools & Platforms</h3>
+                        <div class="skill-items" data-i18n="skill_list_3"></div>
+                    </div>
+                </div>
+
+                <p class="hint-text" data-i18n="hint_text"></p>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates">
+            <div class="content tilt-card">
+                <h2 data-i18n="cert_title"></h2>
+
+                <div class="cert-list">
+                    <!-- Professional Certificates -->
+                    <h3 class="cert-subtitle" data-i18n="cert_subtitle_prof"></h3>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_1_name"></h3>
+                        <p data-i18n="cert_1_detail"></p>
+                    </div>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_2_name"></h3>
+                        <p data-i18n="cert_2_detail"></p>
+                    </div>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_3_name"></h3>
+                        <p data-i18n="cert_3_detail"></p>
+                    </div>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_4_name"></h3>
+                        <p data-i18n="cert_4_detail"></p>
+                    </div>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_google_name"></h3>
+                        <p data-i18n="cert_google_detail"></p>
+                        <a href="files/google ads ai cer.pdf" target="_blank" class="cert-link"
+                            data-i18n="view_cert_btn"
+                            style="display:inline-block; margin-top:0.5rem; font-size:0.85rem; color:#E6AF2E; text-decoration:underline;"></a>
+                    </div>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_hubspot_name"></h3>
+                        <p data-i18n="cert_hubspot_detail"></p>
+                        <a href="files/images/HUBSPOT social media cer.png" target="_blank" class="cert-link"
+                            data-i18n="view_cert_btn"
+                            style="display:inline-block; margin-top:0.5rem; font-size:0.85rem; color:#E6AF2E; text-decoration:underline;"></a>
+                    </div>
+
+                    <!-- Language Proficiency -->
+                    <h3 class="cert-subtitle" data-i18n="cert_subtitle_lang"></h3>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_5_name"></h3>
+                        <p data-i18n="cert_5_detail"></p>
+                    </div>
+
+                    <!-- Courses -->
+                    <h3 class="cert-subtitle" data-i18n="cert_subtitle_course"></h3>
+                    <div class="cert-item">
+                        <h3 data-i18n="cert_6_name"></h3>
+                        <p data-i18n="cert_6_detail"></p>
+                        <a href="files/power bi certification prep.pdf" target="_blank" class="cert-link"
+                            data-i18n="view_cert_btn"
+                            style="display:inline-block; margin-top:0.5rem; font-size:0.85rem; color:#E6AF2E; text-decoration:underline;"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="content tilt-card">
+                <h2 data-i18n="contact_title"></h2>
+
+                <div class="contact-icons">
+                    <!-- Email -->
+                    <a href="mailto:sf0974027696@gmail.com" class="icon-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/tzu-heng-su-6a806735b" target="_blank" class="icon-link"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="skill-modal" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+            <div id="modal-images" class="modal-images"></div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script_v3.js?v=3.1"></script>
+</body>
+
+</html>

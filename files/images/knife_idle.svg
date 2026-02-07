@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Hotspot: Top-Left (0,0)
+    Knife held ready. Tip should be near 0,0.
+    Blade points up-left (-45 deg relative to straight up).
+  -->
+  
+  <g transform="translate(4, 4)">
+    <!-- Blade (Silver/Grey, Sharp) -->
+    <!-- Draw pointing Up-Left -->
+    <path d="M0 0 L15 5 L20 25 L8 22 L0 0 Z" fill="#e0e0e0" stroke="#999" stroke-width="1" />
+    <path d="M0 0 L15 5" stroke="#fff" stroke-width="1" stroke-opacity="0.8" /> <!-- Edge shine -->
+    
+    <!-- Handle (Black/Tactical) -->
+    <path d="M8 22 L20 25 L24 40 L10 38 Z" fill="#1a1a1a" stroke="#000" stroke-width="1" />
+    
+    <!-- Handle Texture -->
+    <path d="M9 24 L19 26" stroke="#333" stroke-width="1" />
+    <path d="M10 28 L20 30" stroke="#333" stroke-width="1" />
+    <path d="M11 32 L21 34" stroke="#333" stroke-width="1" />
+    
+    <!-- Guard -->
+    <rect x="6" y="20" width="18" height="4" fill="#333" transform="rotate(15 15 22)" />
+  </g>
+</svg>

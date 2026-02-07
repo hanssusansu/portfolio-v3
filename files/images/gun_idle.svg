@@ -1,0 +1,40 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Laser Sight (Points from Gun Muzzle to 0,0) -->
+  <!-- Gun Muzzle will be at approx (1,1) -->
+  <line x1="0" y1="0" x2="22" y2="22" stroke="#ff0000" stroke-width="1.5" stroke-opacity="0.9" />
+  <circle cx="0" cy="0" r="1.5" fill="#ff0000" />
+  
+  <!-- 
+    Gun Group 
+    Origin at (22, 22).
+    Rotated -135 to point Top-Left.
+    Gun drawn pointing RIGHT.
+    Back at (0,0) local. Front at (30,0) local.
+  -->
+  <g transform="translate(22, 22) rotate(-135)"> 
+     <!-- Sci-Fi Pistol Design Correction -->
+     
+     <!-- Grip / Handle (At the BACK, x=0..10) -->
+     <!-- Angled slightly back/down -->
+     <path d="M2 4 L0 20 L12 22 L14 4 Z" fill="#1a1a1a" stroke="#111" stroke-width="1"/>
+     
+     <!-- Main Body / Slide (x=0..30) -->
+     <path d="M0 -4 L30 -4 L30 6 L5 6 L0 2 Z" fill="#2a2a2a" stroke="#111" stroke-width="1"/>
+     
+     <!-- Grip Details -->
+     <rect x="2" y="6" width="8" height="12" fill="#333" rx="1"/>
+     
+     <!-- Slide Details -->
+     <rect x="5" y="-2" width="20" height="2" fill="#333" />
+     <rect x="26" y="-4" width="2" height="10" fill="#555" /> <!-- Muzzle ring -->
+     
+     <!-- Trigger Guard (Mid-back x=10..15) -->
+     <path d="M14 6 Q 14 14 20 12" stroke="#444" stroke-width="1.5" fill="none"/>
+     
+     <!-- Trigger -->
+     <path d="M16 6 L16 10" stroke="#333" stroke-width="2" />
+     
+     <!-- Laser Module (Underbarrel, front) -->
+     <rect x="15" y="6" width="10" height="3" fill="#E6AF2E" fill-opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Katana Design
+    Pivot Center: 64, 64 (Where the mouse/hand is)
+    Orientation: Pointing Top-Left (-45 deg approx) 
+  -->
+  
+  <g transform="translate(64, 64) rotate(-45)">
+    <!-- BLADE (Extending RIGHT in local coords, then rotated) -->
+    <!-- Blade Length: approx 60px. Curvature via path -->
+    
+    <!-- Edge (Sharp, Silver) -->
+    <!-- Slight curve up -->
+    <path d="M0 -6 Q 30 -8 60 -4 L 64 0 L 0 4 Z" fill="#e0e0e0" stroke="#999" stroke-width="1"/>
+    
+    <!-- Hamon (Wavy temper line) -->
+    <path d="M0 0 Q 30 -2 58 0" stroke="#ccc" stroke-width="2" stroke-dasharray="2 2" stroke-opacity="0.6" fill="none"/>
+    
+    <!-- Blood Groove (Bo-hi) -->
+    <path d="M5 -4 Q 30 -6 50 -3" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- TSUBA (Guard) - At (0,0) -->
+    <circle cx="0" cy="0" r="10" fill="#2a2a2a" stroke="#d4af37" stroke-width="2"/>
+    <!-- Tsuba Decoration -->
+    <path d="M-4 -4 L4 4 M-4 4 L4 -4" stroke="#444" stroke-width="1"/>
+    
+    <!-- TSUKA (Handle) - Extending LEFT in local coords (backwards) -->
+    <!-- Handle Length: 30px -->
+    <path d="M-10 -5 L-35 -4 L-38 3 L-10 5 Z" fill="#1a1a1a" stroke="#111" stroke-width="1"/>
+    
+    <!-- Tsuka-ito (Diamond Wrap Pattern) -->
+    <!-- Diamonds along the handle -->
+    <path d="M-14 0 L-18 -3 L-22 0 L-18 3 Z" fill="#eee"/>
+    <path d="M-22 0 L-26 -3 L-30 0 L-26 3 Z" fill="#eee"/>
+    
+    <!-- Kashira (Pommel) -->
+    <path d="M-35 -4 L-38 -3 L-38 3 L-35 5 Z" fill="#d4af37"/>
+    
+    <!-- Habaki (Blade Collar) -->
+    <rect x="0" y="-5" width="4" height="10" fill="#d4af37"/>
+  </g>
+</svg>

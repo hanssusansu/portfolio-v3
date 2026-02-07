@@ -1,0 +1,34 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Data Stylus V2
+    Tip is at (0,0). 
+    Body extends diagonally to bottom-right.
+  -->
+  
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <!-- TIP: The absolute interaction point at 0,0 -->
+    <!-- Used a path that starts at 0,0 and flares out -->
+    <path d="M0 0 L12 2 L2 12 Z" fill="#FFD700" stroke="#FFF" stroke-width="0.5" filter="url(#glow)"/>
+    
+    <!-- Main Shaft -->
+    <!-- Extends from the base of the tip (12,2 and 2,12) down to approx (60,60) -->
+    <path d="M12 2 L60 50 L50 60 L2 12 Z" fill="#1a1a1a" stroke="#444" stroke-width="1"/>
+    
+    <!-- Tech Accents (Neon Cyan/Gold Lines for visibility) -->
+    <path d="M16 6 L56 46" stroke="#00FFFF" stroke-width="1" opacity="0.6"/>
+    <path d="M22 12 L50 40" stroke="#FFD700" stroke-width="1" opacity="0.4"/>
+    
+    <!-- Rear Cap -->
+    <path d="M60 50 L66 56 L56 66 L50 60 Z" fill="#333" stroke="#999" stroke-width="1"/>
+    
+    <!-- Rear Glow Light -->
+    <circle cx="61" cy="61" r="3" fill="#00FFFF" filter="url(#glow)"/>
+  </g>
+</svg>

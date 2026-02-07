@@ -1,0 +1,42 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Laser Sight -->
+  <line x1="0" y1="0" x2="22" y2="22" stroke="#ff0000" stroke-width="1" stroke-opacity="0.4" />
+  <circle cx="0" cy="0" r="1.5" fill="#ff0000" />
+  
+  <!-- Global Muzzle Flash (At 1,1 approx, pointing Top-Left) -->
+  <!-- Just place it at 0,0 for maximum impact? Or slightly offset? -->
+  <!-- Let's align it with the barrel tip which lands near (0,0) -->
+  
+  <!-- Gun Group Recoiling (Translate back +2,+2 in local X approx? No, +X is forward. Recoil is -X) -->
+  <!-- Local -X means move Left in local space. Global rotation -135. -->
+  <g transform="translate(26, 26) rotate(-135)"> 
+     <!-- Recoiled Gun (-4 x) -->
+     <!-- Or just use the transform translate above to move the whole group 'Back' (Down-Right) -->
+     
+     <!-- Grip -->
+     <path d="M2 4 L0 20 L12 22 L14 4 Z" fill="#1a1a1a" stroke="#111" stroke-width="1"/>
+     <!-- Body -->
+     <path d="M0 -4 L30 -4 L30 6 L5 6 L0 2 Z" fill="#2a2a2a" stroke="#111" stroke-width="1"/>
+     <!-- Details -->
+     <rect x="2" y="6" width="8" height="12" fill="#333" rx="1"/>
+     <rect x="5" y="-2" width="20" height="2" fill="#333" />
+     <rect x="26" y="-4" width="2" height="10" fill="#555" />
+     <path d="M14 6 Q 14 14 20 12" stroke="#444" stroke-width="1.5" fill="none"/>
+     <path d="M16 6 L16 10" stroke="#333" stroke-width="2" />
+     <rect x="15" y="6" width="10" height="3" fill="#E6AF2E" fill-opacity="0.8"/>
+     
+     <!-- Slide Blowback (Slide moves back relative to frame) -->
+     <!-- Simplified: cover the back of slide with a 'moved' block or just animate position -->
+     <rect x="-4" y="-5" width="28" height="4" fill="#111" fill-opacity="0.5" />
+  </g>
+  
+  <!-- Muzzle Flash -->
+  <!-- Aligned with barrel vector (-135 deg) at tip -->
+  <!-- Tip is roughly at (0,0) + margin. Let's place flash center at 4,4 -->
+  <g transform="translate(6, 6) rotate(-135)">
+     <path d="M0 0 L15 5 L5 10 L8 5 Z" fill="#FFD700" />
+     <circle cx="0" cy="5" r="5" fill="#FFA500" fill-opacity="0.8" />
+      <path d="M0 5 L10 2 L12 8 Z" fill="#FFFFFF" fill-opacity="0.9" />
+  </g>
+
+</svg>
