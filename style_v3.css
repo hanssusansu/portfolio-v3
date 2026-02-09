@@ -52,7 +52,7 @@ select,
     box-shadow: 0 0 8px rgba(212, 175, 55, 0.6), inset 0 0 4px rgba(212, 175, 55, 0.3);
 
     /* Transition for smooth feel */
-    transition: transform 0.05s linear, width 0.2s, height 0.2s;
+    transition: width 0.2s, height 0.2s;
 
     /* Center Pivot (offset handled in JS) */
     transform-origin: center center;
