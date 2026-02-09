@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const translations = {
         zh: {
             name: "蘇子恆",
-            intro: "連結數據邏輯與商業直覺 ｜ 將市場雜訊轉化為精準的獲利指引",
+            intro: "以數據思維結合商業直覺 ｜ 將零散市場訊號轉化為可執行的獲利策略",
             hero_subtitle: "數位行銷與分析碩士研究生｜專注於市場分析、資料視覺化與商業 AI 應用",
             hero_tags: `<span class="hero-tag-pill">Market Analysis</span> · <span class="hero-tag-pill">Data Analytics</span> · <span class="hero-tag-pill">Machine Learning</span> · <span class="hero-tag-pill">Digital Marketing</span>`,
 
@@ -297,13 +297,13 @@ document.addEventListener('DOMContentLoaded', () => {
             skill_list_2: `
                 <div class="skill-item-pill">Market Analysis</div>
                 <div class="skill-item-pill">Digital Marketing Strategy</div>
-                <div class="skill-item-pill">Performance Ads (Google/Meta)</div>
+                <div class="skill-item-pill">Performance Ads (Google)</div>
                 <div class="skill-item-pill">Social Media Analytics</div>
                 <div class="skill-item-pill">Consumer Behavior</div>
             `,
             skill_cat_3: "Tools & Platforms",
             skill_list_3: `
-                <div class="skill-item-pill">Power BI / Tableau</div>
+                <div class="skill-item-pill">Power BI</div>
                 <div class="skill-item-pill">Google Analytics 4 (GA4)</div>
                 <div class="skill-item-pill">Google Ads</div>
                 <div class="skill-item-pill">HubSpot</div>
@@ -856,3 +856,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
