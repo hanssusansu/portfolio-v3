@@ -148,7 +148,8 @@ select,
 }
 
 .lang-btn,
-.resume-btn {
+.resume-btn,
+.dashboard-btn {
     background: rgba(230, 175, 46, 0.1);
     border: 1px solid rgba(230, 175, 46, 0.3);
     color: #E6AF2E;
@@ -166,7 +167,8 @@ select,
 }
 
 .lang-btn:hover,
-.resume-btn:hover {
+.resume-btn:hover,
+.dashboard-btn:hover {
     background: rgba(230, 175, 46, 0.2);
     border-color: #E6AF2E;
     box-shadow: 0 0 15px rgba(230, 175, 46, 0.3);
